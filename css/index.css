@@ -165,14 +165,14 @@ a {
     -o-border-radius: 50% 50%;
 }
 
-.header__btn {
+.header__btn-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     align-self: center;
 }
 
-.btn--green {
+.btn-header--green {
     background-color: #0aa566;
     width: 280px;
     height: 70px;
