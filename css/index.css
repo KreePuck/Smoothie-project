@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'Muli-Bold';
+    src: url('/assets/fonts/Muli-Bold.ttf') format('truetype');
+    font-family: 'Muli-BoldItalic';
+    src: url('/assets/fonts/Muli-BoldItalic.ttf') format('truetype');
+    font-family: 'Muli-ExtraBold';
+    src: url('/assets/fonts/Muli-ExtraBold.woff') format('truetype');
+    font-family: 'Muli-talic';
+    src: url('/assets/fonts/Muli-Italic.ttf') format('truetype');
+    font-family: 'Muli-Regular';
+    src: url('/assets/fonts/Muli-Regular.woff') format('truetype');
+    font-family: 'Muli-Semi-BoldItalic';
+    src: url('/assets/fonts/Muli-Semi-BoldItalic.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli-Regular', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+
+.header {
+    background: url('./../assets/images/header/header-bg-img.png') 0 0/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__top {
+    padding: 65px 100px 105px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+/*              menu */
+
+.header__menu-list {
+    display: flex;
+    max-width: 540px;
+    height: 100%;
+    align-items: center;
+}
+
+.header__menu-item {
+    margin-right: 30px;
+}
+
+.header__menu-item:last-child {
+    margin: 0;
+}
+
+.header__menu-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Muli-Regular', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+/*                      logo */
+
+.header__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+/*                       header__right */
+
+.header__top-right {
+    display: flex;
+}
+
+.header__personal {
+    margin-right: 135px;
+}
+
+.header__social {
+    position: relative;
+}
+
+.header__social::before {
+    content:url(./../assets/images/header/Line.png);
+    position: absolute;
+    top: 5px;
+    left: -90px;
+
+}
+
+.header__personal-link-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header__personal-cart-count {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    background-color: #fff;
+    height: 18px;
+    width: 18px;
+    border-radius: 50% 50%;
+    color: black;
+    font-family: 'Muli-Bold', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.header__personal-list {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.header__personal-item {
+    margin-right: 50px;
+}
+
+.header__personal-item:last-child {
+    margin-right: 0;
+}
+
+.header__social-list {
+    display: flex;
+}
+
+.header__social-item {
+    margin-right: 10px;
+}
+
+.header__social-item:last-child {
+    margin: 0;
+}
+
+.header__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    background-color: #fff;
+    border-radius: 50% 50%;
+    -webkit-border-radius: 50% 50%;
+    -moz-border-radius: 50% 50%;
+    -ms-border-radius: 50% 50%;
+    -o-border-radius: 50% 50%;
+}
+
+.header__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+}
+
+.btn--green {
+    background-color: #0aa566;
+    width: 280px;
+    height: 70px;
+    border-radius: 35px;
+    outline: transparent;
+    border: none;
+    font-family: 'Muli-Regular', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.67;
+    color: #ffffff;
+    text-align: left;
+    padding: 0 40px;
+}
+
+/*  SMOOTHIES */
+
+
+
+/* about */
+
+/* products */
+
+/* story */
+
+/* testimonials */
+
+/* blog */
+
+/* instagram */
+
+/* footer */
