@@ -1,17 +1,27 @@
 @font-face {
     font-family: 'Muli-Bold';
     src: url('/assets/fonts/Muli-Bold.ttf') format('truetype');
+    }
+    @font-face {
     font-family: 'Muli-BoldItalic';
     src: url('/assets/fonts/Muli-BoldItalic.ttf') format('truetype');
+    }
+    @font-face {
     font-family: 'Muli-ExtraBold';
     src: url('/assets/fonts/Muli-ExtraBold.woff') format('truetype');
+    }
+    @font-face {
     font-family: 'Muli-talic';
     src: url('/assets/fonts/Muli-Italic.ttf') format('truetype');
+    }
+    @font-face {
     font-family: 'Muli-Regular';
     src: url('/assets/fonts/Muli-Regular.woff') format('truetype');
+    }
+    @font-face {
     font-family: 'Muli-Semi-BoldItalic';
     src: url('/assets/fonts/Muli-Semi-BoldItalic.ttf') format('truetype');
-}
+    }
 
 * {
     box-sizing: border-box;
@@ -29,6 +39,11 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+.btn {
+    height: 60px;
+    border-radius: 30px;
 }
 
 /* HEADER */
@@ -97,7 +112,7 @@ a {
 }
 
 .header__social::before {
-    content:url(./../assets/images/header/Line.png);
+    content: url(./../assets/images/header/Line.png);
     position: absolute;
     top: 5px;
     left: -90px;
@@ -190,11 +205,209 @@ a {
 
 /*  SMOOTHIES */
 
+.smoothies {
+    background-color: #fff;
+}
+
+.smoothies__heading {
+    font-family: 'Muli-ExtraBold', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    color: #f7ae3b;
+    margin: 98px 0 55px 0;
+}
+
+.smoothies__text {
+    width: 915px;
+    font-family: 'Muli-Regular', sans-serif;
+    font-size: 18px;
+    line-height: 1.94;
+    text-align: center;
+    margin: 0 auto 60px;
+    color: #1e1e1e;
+}
+
+/*              smoothies__wrapper */
+
+.smoothies__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1010px;
+    min-height: 389px;
+    margin: 0 auto;
+    margin-bottom: 107px;
+}
+
+.smoothies__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 25%;
+    justify-content: center;
+    border-bottom: none;
+    border-right: 2px solid #f6edde;
+}
+
+.smoothies__item:nth-child(4n) {
+    border-right: none;
+}
+
+.smoothies__item:nth-child(-n+4) {
+    border-bottom: 2px solid #f6edde;
+}
+
+.smoothies__img {}
+
+.smoothies__desc {
+    font-family: 'Muli-ExtraBold', sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+    color: #f2612d;
+}
+
+/* ABOUT */
+
+.about {
+    background-color: #14826f;
+    color: #fff;
+    font-size: 21px;
+    min-height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about__inner {
+    min-width: 834px;
+    height: 800px;
+}
+
+.about__img {
+    position: relative;
+    top: 64px;
+    left: 143px;
+}
+
+.about__wrapper {
+    margin: 97px 0 0 142px;
+    display: flex;
+    max-width: 588px;
+    flex-flow: column wrap;
+}
 
 
-/* about */
+.about__heading {
+    font-family: 'Muli-ExtraBold', sans-serif;
+    font-size: 53px;
+    margin: 0 0 68px 0;
+}
+
+.about__heading--green {
+    color: #cae941;
+    position: relative;
+}
+
+.about__heading--green::after {
+    content: url('./../assets/images/about/Line-green.png');
+    position: absolute;
+    bottom: -15px;
+    right: -20px;
+}
+
+.about__list-item {
+    margin-bottom: 25px;
+}
+
+.about__list-item::before {
+    content: url('./../assets/images/about/icon_about.png');
+    width: 18px;
+    height: 18px;
+    margin-right: 19px;
+}
+
+.about__strong {
+    font-family: 'Muli-ExtraBold', sans-serif;
+}
+
+.about__btn {
+    width: 380px;
+    position: relative;
+    background-color: transparent;
+    border: 2px solid #f8b231;
+    color: #fff;
+    text-align: left;
+    padding-left: 29px;
+}
+
+.about__btn::after {
+    content: url('./../assets/images/about/Arrow-about.png');
+    position: absolute;
+    right: 39px;
+}
 
 /* products */
+
+.products {
+    display: flex;
+    color: white;
+}
+
+.products__stuff {
+    width: 25%;
+    height: 720px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.products__stuff:first-child {
+    background-color: #632b17;
+}
+
+.products__stuff:nth-child(2) {
+    background-color: #178670;
+}
+
+.products__stuff:nth-child(3) {
+    background-color: #f7ae3b;
+}
+
+.products__stuff:last-child {
+    background-color: #c3471b;
+}
+
+.products__desc {
+    font-family: 'Muli-Bold', sans-serif;
+    font-size: 24px;
+    margin: 34px 0 10px 0;
+}
+
+.products__quantity {
+    font-family: 'Muli-talic', sans-serif;
+    font-size: 21px;
+}
+
+.products__btn {
+    position: relative;
+    width: 204px;
+    border: solid 2px #ffffff;
+    background-color: transparent;
+    margin-top: 65px;
+    color: #fff;
+    font-family: 'Muli-ExtraBold';
+    font-size: 21px;
+    padding: 0 36px;
+    text-align: left;
+}
+
+.products__btn::after {
+    content: url('./../assets/images/products/Arrow-white.png');
+    position: absolute;
+    right: 36px;
+}
 
 /* story */
 
