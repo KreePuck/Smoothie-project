@@ -29,6 +29,7 @@
 
 body {
     font-family: 'Muli-Regular', sans-serif;
+    font-size: 18px;
 }
 
 ul {
@@ -44,6 +45,8 @@ a {
 .btn {
     height: 60px;
     border-radius: 30px;
+    font-family: 'Muli-ExtraBold';
+    font-size: 21px;
 }
 
 /* HEADER */
@@ -258,8 +261,6 @@ a {
     border-bottom: 2px solid #f6edde;
 }
 
-.smoothies__img {}
-
 .smoothies__desc {
     font-family: 'Muli-ExtraBold', sans-serif;
     font-size: 25px;
@@ -410,6 +411,58 @@ a {
 }
 
 /* story */
+
+.story {
+    background: #fff;
+    height: 880px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.story__wrapper {
+    width: 515px;
+}
+
+.story__heading {
+    font-family: 'Muli-ExtraBold';
+    font-size: 50px;
+    color: #f7ae3b;
+    margin: 0;
+}
+
+.story__desc {
+    line-height: 1.94;
+    margin: 43px 0 60px 0;
+}
+
+.story__btn {
+    width: 301px;
+    position: relative;
+    border: none;
+    background-color: #0aa566;
+    color: #fff;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.story__btn::after {
+    content: url('./../assets/images/about/Arrow-about.png');
+    position: absolute;
+    right: 39px;
+}
+
+.story__img-wrapper {
+    position: relative;
+}
+
+.story__img-wrapper::before {
+    content:url('./../assets/images/story/Stamp.png');
+    position: absolute;
+    left: -166px;
+    top: 22px;
+}
 
 /* testimonials */
 
