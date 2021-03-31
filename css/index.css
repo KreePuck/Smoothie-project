@@ -466,6 +466,90 @@ a {
 
 /* testimonials */
 
+.testimonials {
+    position: relative;
+    background: #672f1b;
+    min-height: 720px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.testimonials::after {
+    content: url('./../assets/images/testimonials/Dots.png');
+    position: absolute;
+    top: -80px;
+    right: 60px;
+}
+
+.testimonials__heading {
+    font-family: 'Muli-ExtraBold';
+    font-size: 50px;
+    color: #f7ae3b;
+}
+
+.testimonials__heading--orange {
+    color: #f2612d;
+}
+
+.testimonials__wrapper {
+    width: 735px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonials__wrapper::before {
+    content: 'Sarah A';
+    position: absolute;
+    width: 800px;
+    top: -80px;
+    left: -185px;
+    font-family: 'Muli-ExtraBold';
+    font-size: 200px;
+    color: rgba(82, 25, 5, 0.6);
+}
+
+.testimonials__comment {
+    width: 455px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin-bottom: 23px;
+}
+
+.testimonials__quote {
+    color: #fff;
+    line-height: 1.94;
+    text-align: center;
+    margin-bottom: 30px;
+    z-index: 2;
+}
+
+.testimonials__location {
+    color: #f7ae3b;
+    text-align: center;
+    z-index: 2;
+}
+
+.testimonials__img {
+    z-index: 2;
+}
+
+.testimonials__btn-wrapper {
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonials__btn {
+    height: 30px;
+    width: 45px;
+    background-color: transparent;
+    border: none;
+}
+
 /* blog */
 
 /* instagram */
