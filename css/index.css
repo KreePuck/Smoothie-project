@@ -552,6 +552,62 @@ a {
 
 /* blog */
 
+.blog {
+    min-width: 790px;
+}
+
+.blog__container {
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.blog__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog__heading {
+    font-family: 'Muli-ExtraBold';
+    font-size: 50px;
+    color: #f7ae3b;
+}
+
+.blog__inner-img {
+    position: relative;
+}
+
+.blog__img {
+    z-index: 5;
+    position: relative;
+}
+
+.blog__inner-img::after {
+    content: url('./../assets/images/blog/Line-yellow.png');
+    position: absolute;
+    top: 65px;
+    left: 513px;
+}
+
+.blog__paper {
+    align-self: flex-end;
+}
+
+.blog__paper-heading {
+    font-family: 'Muli-ExtraBold';
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #f2612d;
+}
+
+.blog__date {
+    font-size: 16px;
+}
+
+.blog__desc {
+    line-height: 1.94;
+}
+
 /* instagram */
 
 /* footer */
