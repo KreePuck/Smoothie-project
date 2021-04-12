@@ -652,8 +652,8 @@ a {
 }
 
 .instagram__img-wrapper {
-    display: flex;
     position: relative;
+    flex: 0 1 20%;
 }
 
 .instagram__img-wrapper::after {
@@ -666,4 +666,13 @@ a {
     bottom: 20px;
 }
 
+.instagram__img {
+    width: 100%;
+    height: 100%;
+}
+
 /* footer */
+
+.footer {
+    background: #f6ab3b;
+}
