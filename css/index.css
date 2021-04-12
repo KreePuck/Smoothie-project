@@ -1,27 +1,32 @@
 @font-face {
     font-family: 'Muli-Bold';
     src: url('/assets/fonts/Muli-Bold.ttf') format('truetype');
-    }
-    @font-face {
+}
+
+@font-face {
     font-family: 'Muli-BoldItalic';
     src: url('/assets/fonts/Muli-BoldItalic.ttf') format('truetype');
-    }
-    @font-face {
+}
+
+@font-face {
     font-family: 'Muli-ExtraBold';
     src: url('/assets/fonts/Muli-ExtraBold.woff') format('truetype');
-    }
-    @font-face {
+}
+
+@font-face {
     font-family: 'Muli-talic';
     src: url('/assets/fonts/Muli-Italic.ttf') format('truetype');
-    }
-    @font-face {
+}
+
+@font-face {
     font-family: 'Muli-Regular';
     src: url('/assets/fonts/Muli-Regular.woff') format('truetype');
-    }
-    @font-face {
+}
+
+@font-face {
     font-family: 'Muli-Semi-BoldItalic';
     src: url('/assets/fonts/Muli-Semi-BoldItalic.ttf') format('truetype');
-    }
+}
 
 * {
     box-sizing: border-box;
@@ -458,7 +463,7 @@ a {
 }
 
 .story__img-wrapper::before {
-    content:url('./../assets/images/story/Stamp.png');
+    content: url('./../assets/images/story/Stamp.png');
     position: absolute;
     left: -166px;
     top: 22px;
@@ -675,4 +680,139 @@ a {
 
 .footer {
     background: #f6ab3b;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__top {
+    display: flex;
+    height: 372px;
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+
+.footer__logo {
+    display: flex;
+    flex: 0 1 31%;
+    align-items: center;
+}
+
+.logo__link {
+    margin-left: 15%;
+}
+
+.logo__img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer__info {
+    flex-basis: 17%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer__heading {
+    font-family: 'Muli-ExtraBold';
+    font-size: 26px;
+    font-weight: 800;
+    color: #fff;
+    margin: 0 0 35px 0;
+}
+
+.footer__list {
+    margin-top: 10px;
+    line-height: 1.94;
+    font-family: 'Muli-Bold';
+}
+
+.footer__info-link {
+    color: #6d450c;
+}
+
+.footer__payment {
+    flex: 0 1 22%;
+}
+
+.footer__wrapper {
+    width: 230px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer__payment-img {
+    margin-right: 10px;
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.footer__mailing {
+    position: relative;
+}
+
+.footer__mailing-form {
+    position: relative;
+}
+
+.footer__mailing-form::before {
+    content: '';
+    position: absolute;
+    background-image: url('./../assets/images/footer/envelope.png');
+    width: 24px;
+    height: 19px;
+    top: 22px;
+    left: 25px;
+}
+
+.footer__mailing-email {
+    display: block;
+    width: 495px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.footer__mailing-email[type="email"]::placeholder {
+    padding-left: 63px;
+    font-family: 'Muli-Bold';
+    font-size: 17px;
+    color: #6d450c;
+}
+
+.footer__mailing-btn {
+    position: relative;
+    background: none;
+    border: none;
+    height: 25px;
+    font-size: 18px;
+    color: #6d450c;
+    text-transform: uppercase;
+    margin: 0 205px 0 185px;
+}
+
+.footer__mailing-btn::before {
+    content: '';
+    position: absolute;
+    background-image: url('./../assets/images/footer/Follow\ us.png');
+    width: 48px;
+    height: 43px;
+    top: -20px;
+    left: -57px;
+}
+
+.footer__mailing-list {
+    width: 110px;
+    display: flex;
+    flex: 0 1 100%;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20px;
+    right: 60px;
+}
+
+.footer__bot {
+    background: #6c2c1c;
 }
