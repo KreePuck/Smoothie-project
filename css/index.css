@@ -814,5 +814,46 @@ a {
 }
 
 .footer__bot {
+    height: 60px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #6c2c1c;
+}
+
+.footer__rights {
+    font-size: 13px;
+    color: #af8a82;
+}
+
+.foooter__btn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f2662f;
+    bottom: 40px;
+    right: 100px;
+}
+
+.foooter__btn::before {
+    position: absolute;
+    content: "Go top";
+    font-family: 'Muli-Bold';
+    font-size: 16px;
+    color: #fff;
+    bottom: -19px;
+    left: -60px;
+}
+
+.foooter__btn::after {
+    content: "";
+    background: url('./../assets/images/footer/footer-arrow.png');
+    position: absolute;
+    top: 14px;
+    left: 18px;
+    height: 25px;
+    width: 13px;
 }
